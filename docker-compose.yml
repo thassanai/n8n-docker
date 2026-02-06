@@ -22,7 +22,7 @@ services:
       - "5678:5678"
     environment:
       - N8N_HOST=n8n.findops.com
-      - WEBHOOK_URL=https://n8n.findops.com:5678
+      - WEBHOOK_URL=https://n8n.findops.com
       - WEBHOOK_TUNNEL_URL=https://n8n.findops.com
       - TZ=Asia/Bangkok
       - GENERIC_TIMEZONE=Asia/Bangkok
@@ -46,7 +46,6 @@ services:
     restart: always
     command: worker
     environment:
-      - NODE_ENV=development
       - TZ=Asia/Bangkok
       - GENERIC_TIMEZONE=Asia/Bangkok
       - DB_TYPE=postgresdb

@@ -13,9 +13,9 @@ x-shared: &shared
     - DB_POSTGRESDB_DATABASE=${POSTGRES_DB}
     - DB_POSTGRESDB_USER=${POSTGRES_NON_ROOT_USER}
     - DB_POSTGRESDB_PASSWORD=${POSTGRES_NON_ROOT_PASSWORD}
-    - N8N_HOST=bravo.nooxs.com
-    - WEBHOOK_TUNNEL_URL=https://hostname.domain.com
-    - WEBHOOK_URL=https://hostname.domain.com
+    - N8N_HOST=n8n.findops.com
+    - WEBHOOK_TUNNEL_URL=https://n8n.findops.com
+    - WEBHOOK_URL=https://n8n.findops.com
     - GENERIC_TIMEZONE=Asia/Bangkok
     - TZ=Asia/Bangkok
     - N8N_PROXY_HOPS=1

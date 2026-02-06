@@ -5,7 +5,7 @@ volumes:
 
 x-shared: &shared
   restart: always
-  image: n8nio/lastest
+  image: n8nio/n8n
   environment:
     - DB_TYPE=postgresdb
     - DB_POSTGRESDB_HOST=postgres
@@ -14,8 +14,8 @@ x-shared: &shared
     - DB_POSTGRESDB_USER=${POSTGRES_NON_ROOT_USER}
     - DB_POSTGRESDB_PASSWORD=${POSTGRES_NON_ROOT_PASSWORD}
     - N8N_HOST=bravo.nooxs.com
-    - WEBHOOK_TUNNEL_URL=https://bravo.nooxs.com
-    - WEBHOOK_URL=https://bravo.nooxs.com
+    - WEBHOOK_TUNNEL_URL=https://hostname.domain.com
+    - WEBHOOK_URL=https://hostname.domain.com
     - GENERIC_TIMEZONE=Asia/Bangkok
     - TZ=Asia/Bangkok
     - N8N_PROXY_HOPS=1
